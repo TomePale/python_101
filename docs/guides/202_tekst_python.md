@@ -225,9 +225,11 @@ Postoji naravno još niz radnji koje možemo provoditi nad tekstom. Dapače, tek
 #### Druge česte radnje s tekstom:
 
 ```python
->>> tekst = 'Ne da mi se ovo čitati.' # zamijeni sve znakove "a" sa znakom "x"
+>>> tekst = 'Ne da mi se ovo čitati.'
+# zamijeni sve znakove "a" sa znakom "x"
 >>> tekst.replace('a', 'x')
-'ne dx mi se ovo čitxt' # može i s duljim nizovima
+'ne dx mi se ovo čitxt'
+# može i s duljim nizovima
 >>> tekst.replace('ne da mi se', 'želim') '
 želim ovo čitat' # da li neki tekst sadrži znak ili drugi manji tekst
 >>> 'o' in tekst
@@ -235,9 +237,11 @@ True
 >>> 'u' in tekst
 False
 >>> 'ovo' in tekst
-True # prebroji koliko se puta pojavljuje neki tekst u duljem tekstu
+True
+# prebroji koliko se puta pojavljuje neki tekst u duljem tekstu
 >>> tekst.count('a')
-2 # pronađi poziciju na kojoj se prvi put pojavljuje neki tekst u duljem tekstu
+2
+# pronađi poziciju na kojoj se prvi put pojavljuje neki tekst u duljem tekstu
 >>> tekst.find('a')
 4
 ```

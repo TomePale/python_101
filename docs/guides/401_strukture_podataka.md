@@ -15,7 +15,10 @@ Postoje posebne *vrste vrijednosti* koje služe upravo strukturiranju drugih vri
 ```python
 >>> boje = ["crvena", "zelena", "plava"] # popis definiramo uglatim zagradama
 >>> print(boje)
-["crvena", "zelena", "plava"] # elemente dohvaćamo uglatim zagradama i indeksom pozicije # indeksi počinju od 0, odnosno prvi element popisa se nalazi na indeksu 0
+["crvena", "zelena", "plava"]
+
+# elemente dohvaćamo uglatim zagradama i indeksom pozicije
+# # indeksi počinju od 0, odnosno prvi element popisa se nalazi na indeksu 0
 >>> prva_boja = boje[0]
 >>> print(prva_boja)
 crvena
@@ -24,7 +27,8 @@ crvena
 Primjer je prikazao najjednostavniji način stvaranja popisa. Zarezom odvojeni objekti unutar uglatih zagrada stvaraju popis. Vrijedi napomenuti i da unutar popisa, kao i u ostalim zagradama u Pythonu, možemo dodavati nove retke radi preglednosti. Na primjer:
 
 ```python
->>> boje_a = ["crvena", "zelena", "plava"] # popis definiramo uglatim zagradama# popis boje_b identičan je popisu boje_a, samo je raspisan drugačije
+>>> boje_a = ["crvena", "zelena", "plava"] # popis definiramo uglatim zagradama
+# popis boje_b identičan je popisu boje_a, samo je raspisan drugačije
 >>> boje_b = [ "crvena", "zelena", "plava" ]
 >>> boje_a == boje_b
 True
@@ -35,13 +39,16 @@ Mogućnost pisanja struktura u više redaka je korisna za osiguranje preglednost
 Također, većina struktura pruža način kako dohvatiti neki individualni objekt koji se u njoj nalazi. U mnogim slučajevima to je i poanta korištenja Uglate zagrade odmah nakon imena neke varijable u Pythonu (i mnogim drugim jezicima) označavaju upravo to: dohvati objekt(e) iz strukture podataka putem vrijednosti u uglatim zagradama. Kod popisa je to indeks, odnosno cijeli broj koji označava poziciju elementa u popisu, gdje je indeks prvog objekta 0, a zadnji je jednak broju objekata u popisu -1. Drugim riječima, validni indeksi za popis od četiri objekta su 0, 1, 2 u 3. Obzirom da su adrese u popisu jasno definiran raspon brojeva, kao indekse možemo koristiti i negativne brojeve i raspone brojeva:
 
 ```python
->>> boje = ["crvena", "zelena", "plava", "žuta", "ljubičasta"]# dohvati drugu boju iz popisa, odnosno boju na indeksu 1
+>>> boje = ["crvena", "zelena", "plava", "žuta", "ljubičasta"]
+# dohvati drugu boju iz popisa, odnosno boju na indeksu 1
 >>> druga_boja = boje[1]
 >>> print(druga_boja)
-zelena # dohvati zadnju boju iz popisa
+zelena
+# dohvati zadnju boju iz popisa
 >>> zadnja_boja = boje[-1]
 >>> print(zadnja_boja)
-ljubičasta# dohvati raspon vrijednosti iz popisa
+ljubičasta
+# dohvati raspon vrijednosti iz popisa
 >>> neke_boje = boje[1:4] # dohvaća vrijednosti pod indeksima 1, 2 i 3
 >>> print(neke_boje)
 ["zelena", "plava", "žuta"]
@@ -109,31 +116,38 @@ Ostale promjene popisa se provode putem metoda koje pruža vrsta vrijednosti *li
 Pogledajmo primjere:
 
 ```python
->>> boje = ["crvena", "zelena", "plava"] # dodaj vrijednost na kraj popisa
+>>> boje = ["crvena", "zelena", "plava"]
+# dodaj vrijednost na kraj popisa
 >>> boje.append("žuta")
 >>> print(boje)
-["crvena", "zelena", "plava", "žuta"] # proširi popis svim vrijednostima iz drugog popisa
+["crvena", "zelena", "plava", "žuta"]
+# proširi popis svim vrijednostima iz drugog popisa
 >>> druge_boje = ["crna", "bijela"]
 >>> boje.extend(druge_boje)
 >>> print(boje)
-["crvena", "zelena", "plava", "žuta", "crna", "bijela"] # ubaci vrijednost na određeni indeks
+["crvena", "zelena", "plava", "žuta", "crna", "bijela"]
+# ubaci vrijednost na određeni indeks
 >>> boje.insert(2, "zelena")
 >>> print(boje)
-["crvena", "zelena", "zelena", "plava", "žuta", "crna", "bijela"] # dohvati i izbaci zadnju vrijednost u popisu
+["crvena", "zelena", "zelena", "plava", "žuta", "crna", "bijela"]
+# dohvati i izbaci zadnju vrijednost u popisu
 >>> zadnja_boja = boje.pop()
 >>> print(zadnja_boja)
 bijela
 >>> print(boje)
-["crvena", "zelena", "zelena", "plava", "žuta", "crna"]# dohvati i izbaci vrijednost u popisu na nekom indeksu
+["crvena", "zelena", "zelena", "plava", "žuta", "crna"]
+# dohvati i izbaci vrijednost u popisu na nekom indeksu
 >>> boje = ["crvena", "zelena", "zelena", "plava", "žuta", "crna"]
 >>> peta_boja = boje.pop(4)
 >>> print(peta_boja)
 žuta
 >>> print(boje)
-["crvena", "zelena", "zelena", "plava", "crna"] # izbaci PRVU pronađenu vrijednost
+["crvena", "zelena", "zelena", "plava", "crna"]
+# izbaci PRVU pronađenu vrijednost
 >>> boje.remove("zelena")
 >>> print(boje)
-["crvena", "zelena", "plava", "crna"] # sortiraj popis
+["crvena", "zelena", "plava", "crna"]
+# sortiraj popis
 >>> boje.sort()
 >>> print(boje)
 ["crna", "crvena", "plava", "zelena"]
@@ -166,18 +180,23 @@ Uz navedeno, često je korisno prebirati po **indeksima**, a ne po vrijednostima
 
 ```python
 >>> r = range(2, 10)
->>> print(r) range(2, 10) # range nije popis!
+>>> print(r)
+range(2, 10) # range nije popis!
 >>> print(list(r)) # ali bilo koji range možemo pretvoriti u popis
 [2, 3, 4, 5, 6, 7, 8, 9]
+
 >>> r = range(0, 5)
 >>> print(list(r))
 [0, 1, 2, 3, 4]
+
 >>> r = range(5) # ako pošaljemo samo jedan broj, smatra se da je početni broj 0
 >>> print(list(r))
 [0, 1, 2, 3, 4]
+
 >>> boje = ["crvena", "zelena", "zelena", "plava", "crna"]
 >>> broj_boja = len(boje)
 >>> for i in range(broj_boja): print("Na indeksu", i, "nalazi se", boje[i])
+
 Na indeksu 0 nalazi se crvena
 Na indeksu 1 nalazi se zelena
 Na indeksu 2 nalazi se zelena
@@ -192,11 +211,14 @@ Osim definiranja minimuma i maksimuma, `range` prima i opcionalni treći paramet
 <div class="minipage">
 
 ```python
+# range sa zadanim minimumom i maksimumom
 >>> r = range(1, 10)
 >>> print(r)
 range(1, 10)
 >>> print(list(r))
-[1, 2, 3, 4, 5, 6, 7, 8, 9] # range sa zadanim minimumom, maksimumom i korakom
+[1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+ # range sa zadanim minimumom, maksimumom i korakom
 >>> r = range(1, 10, 2)
 >>> print(r)
 range(1, 10, 2)
