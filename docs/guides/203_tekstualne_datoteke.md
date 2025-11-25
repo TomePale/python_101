@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Rad s tekstualnim datotekama
 
 Rad s običnim tekstualnim datotekama važniji je no što se to možda čini na prvi pogled. Na primjer, svaki program nastaje kao običan tekst, cijeli WWW se zasniva na običnom tekstu, kao i razmjena podataka među informacijskim sustavima. Čitanje i pisanje tekstualnih datoteka je stoga neobično važno ne samo za programiranje već i za sveukupno računarstvo.

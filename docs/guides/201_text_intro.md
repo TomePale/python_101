@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Tekst na računalu
 
 Prije no što se bacimo na programiranje s tekstom, korisno je razumjeti kako računalo barata tekstom jer se to razlikuje od teksta zapisanog na papiru ili kakvoj drugoj materijalnoj podlozi.

@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Definicija vlastitih funkcija
 
 Do sada smo već koristili mnoge funkcije koje dolaze ugrađene u Python (npr. `print` ili `sum`) kao i one koje su dostupne kroz module (`math.floor`).

@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Uvod u programiranje s podacima
 
 Strukture podataka su sastavan dio programiranja bez kojih nije moguće zamisliti mnoge algoritme. Između ostalog, strukture podataka omogućuju rad s podacima za potrebe analitike ili upravljanja. Dapače, jedna od popularnijih namjena Pythona je upravo rad s podacima poput onih iz baza podataka ili dohvaćenih kroz sučelja za razmjenu podataka.

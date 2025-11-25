@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Rad s tekstom u Pythonu
 
 Digitalan tekst je dakle niz znakova i uz brojeve je najčešća vrsta vrijednosti. Kada razmislimo, niz znakova nije jednostavna vrsta vrijednosti jer se može raščlaniti na sastavne dijelove odnosno znakove[^1]. Ipak, kad radimo s tekstom vrlo često ga promatramo kao vrijednost koja može sadržavati nula ili više znakova. Tekst od nula znakova se naziva "praznim tekstom" (eng. *empty string*) i na neki način odgovara konceptu nule kod brojeva.

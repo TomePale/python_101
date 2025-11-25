@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Strukture podataka
 
 *Strukture podataka* valja shvatiti kao *zbirke vrijednosti*, a ova dva termina se često koriste i na engleskom (*data structure* i *collection*). Upotrebe ovog koncepta su višestruke. Ponekad se neka vrijednost po svojoj prirodi sastoji od više pod-vrijednosti. Spomenuli smo već tekst koji je zapravo "niz znakova", a možemo tome dodati i kojekakve složene vrijednosti poput datuma (tri cijela broja: dan, mjesec i godina) ili osobnog imena (dva niza znakova: ime i prezime[^1]).
