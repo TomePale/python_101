@@ -1,4 +1,6 @@
-# Python 101
+---
+title: "Python 101 | Python programming tutorials and guides"
+---
 
 ![Python logo](./docs/images/python-logo-notext.svg)
 
