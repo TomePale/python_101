@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Moduli: Proširenja mogućnosti
 
 Programski jezici tipično u svojoj osnovnoj specifikaciji definiraju
@@ -43,9 +45,9 @@ Također, Python dozvoljava i uvoz samo jednog člana nekog modula.
 
 ``` python
 
->>> from math import pi 
->>> print(pi) 3.141592653589793 
->>> pi = 100 
+>>> from math import pi
+>>> print(pi) 3.141592653589793
+>>> pi = 100
 >>> print(pi) 100
 ```
 
@@ -60,7 +62,7 @@ preimenovati koristeći se riječi `as`.
 
 ``` python
 
->>> from math import pi as x 
+>>> from math import pi as x
 >>> print(x) 3.141592653589793
 ```
 

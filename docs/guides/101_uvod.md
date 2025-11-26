@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Uvod u programiranje
 
 Kada bi pisanim jezikom znali zadavati naredbe računalu, mogli bi mu
@@ -121,7 +123,7 @@ verzija Pythona za potrebe ovog teksta je 3.3., a preporuča se
 instalirati zadnju 3.x verziju.
 
  **VAŽNO:** Koristite Python 3
- 
+
  Ova skripta nije namijenjena za Python 2.x i mnogi primjeri u toj verziji neće raditi ili će raditi pogrešno.
 
 

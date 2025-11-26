@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 ## Programiranje s kornjačom
 
 "Kornjača" je alat za učenje programiranja koji se koristio u jeziku
@@ -116,13 +118,13 @@ stranica. Ima međutim još jedan problem, unosi su postavljeni tako da
 čim je veći broj stranica, tim je veći i poligon ukoliko sami ne
 promijenimo dužinu stranice. Navedeno je vidljivo i u ovome tekstu u
 razlici u veličini između prikazano trokuta i heksagona, a kako raste
-broj stranica, tako raste i veličina. Na slici 9 vidimo poligon koji je 
+broj stranica, tako raste i veličina. Na slici 9 vidimo poligon koji je
 pobjega s ekrana.
 
 Slika 9: Interaktivan rad s kornjačom
 
 <a href="#fig:turtle_big_poly" data-reference-type="ref"
-data-reference="fig:turtle_big_poly"></a> 
+data-reference="fig:turtle_big_poly"></a>
 
 <figure id="fig:turtle_big_poly" data-latex-placement="ht">
 <img src="../images/turtle_big_poly.png" style="width:75.0%" />

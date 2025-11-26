@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 ## Pogodi broj
 
 Implementirajmo još jedan jednostavan program: igru "pogodi broj."

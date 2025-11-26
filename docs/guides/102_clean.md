@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Radnje: Izjave, izrazi, operatori, funkcije i metode
 
 Osnovna namjena programiranje je reći računalu što da *radi*. Ono što
@@ -50,9 +52,9 @@ koncepte kao sastavne dijelove što je to funkcija. Pogledajmo primjere:
 
 ``` python
 
->>> 17 + 25 42 
->>> n = 17 + 25 
->>> if n print(’broj je paran’) else: print(’broj je neparan’)broj je paran 
+>>> 17 + 25 42
+>>> n = 17 + 25
+>>> if n print(’broj je paran’) else: print(’broj je neparan’)broj je paran
 >>> x = round(3.14)
 ```
 
@@ -168,14 +170,14 @@ zatražimo unos funkcijom `input`.
 
 ``` python
 
->>> x = 16 # pridruži vrijednost 16 novoj varijabli x 
->>> y = 26 # pridruži vrijednost 26 novoj varijabli y 
->>> x + y # rezultat ovog izračuna nismo pridružili niti jednoj varijabli 42 
->>> z = x + y # definiraj novu varijablu z kako bi se kasnije mogao pozvati na rezultat 
->>> print(z) # pozovi se na vrijednost varijable z 42 
->>> z = y - x # pridruži novu vrijednost varijabli z 
+>>> x = 16 # pridruži vrijednost 16 novoj varijabli x
+>>> y = 26 # pridruži vrijednost 26 novoj varijabli y
+>>> x + y # rezultat ovog izračuna nismo pridružili niti jednoj varijabli 42
+>>> z = x + y # definiraj novu varijablu z kako bi se kasnije mogao pozvati na rezultat
+>>> print(z) # pozovi se na vrijednost varijable z 42
+>>> z = y - x # pridruži novu vrijednost varijabli z
 >>> print(z) # pozovi se na vrijednost varijable z 10
->>> text = input("Upiši neki tekst: ") # pridruži korisnički unos varijabli "text" Upiši neki tekst: neću 
+>>> text = input("Upiši neki tekst: ") # pridruži korisnički unos varijabli "text" Upiši neki tekst: neću
 >>> print(text) # varijabla text se sada referira na što god da je korisnik upisao ’neću’
 ```
 
@@ -225,14 +227,14 @@ data-reference="listing:dodjeljivanje_aritmetika">[listing:dodjeljivanje_aritmet
 
 ``` python
 
->>> x = 1 
->>> x = x + 2 # zbroji x i 2 pa pridruži novu vrijednost varijabli x 
->>> print(x) # x sada ima novu vrijednost, nije više 1 3 
->>> x += 2 # isto što i x = x + 2 samo kraće za pisati 
->>> print(x) 5 
->>> x *= 2 # isto što i x = x * 2 samo kraće za pisati 
->>> print(x) 10 
->>> x /= 2 # isto što i x = x / 2 
+>>> x = 1
+>>> x = x + 2 # zbroji x i 2 pa pridruži novu vrijednost varijabli x
+>>> print(x) # x sada ima novu vrijednost, nije više 1 3
+>>> x += 2 # isto što i x = x + 2 samo kraće za pisati
+>>> print(x) 5
+>>> x *= 2 # isto što i x = x * 2 samo kraće za pisati
+>>> print(x) 10
+>>> x /= 2 # isto što i x = x / 2
 >>> print(x) 5.0
 ```
 
@@ -349,7 +351,7 @@ ali za sada možemo upotrebu prikazati sljedećim primjerom:
 
 ``` python
 
->>> True == 1 # True se može smatrati jednakom vrijednosti 1 True 
+>>> True == 1 # True se može smatrati jednakom vrijednosti 1 True
 >>> True is 1 # True nije posve ista vrijednost u memoriji kao i 1 False
 ```
 
@@ -362,7 +364,7 @@ izraz potreban nam je koncept prioriteta operatora. Pogledajmo primjer.
 
 ``` python
 
->>> 2 + 2 * 3 # prvo se množi a onda zbraja 8 
+>>> 2 + 2 * 3 # prvo se množi a onda zbraja 8
 >>> (2 + 2) * 3 # prvo se evaluira operacija u zagradama, a tek onda množi 12
 ```
 
@@ -512,8 +514,8 @@ primjer funkcije s dva parametra.
 
 ``` python
 
->>> pi = 3.1416 
->>> round(pi) # obavezan parametar, što se zaokružuje, bez toga radnja nema smisla 3 
+>>> pi = 3.1416
+>>> round(pi) # obavezan parametar, što se zaokružuje, bez toga radnja nema smisla 3
 >>> round(pi, 2) # drugi parametar je opcionalan, na koliko decimala 3.14
 ```
 
@@ -559,9 +561,9 @@ ne pozicije. Pogledajmo primjer:
 
 ``` python
 
->>> n = 3.142 
->>> round(number=n) # bilo koji parametar možemo i imenovati 3 
->>> round(number=n, ndigits=2) # sintaksa je ista pridruživanju vrijednosti varijabli 3.14 
+>>> n = 3.142
+>>> round(number=n) # bilo koji parametar možemo i imenovati 3
+>>> round(number=n, ndigits=2) # sintaksa je ista pridruživanju vrijednosti varijabli 3.14
 >>> round(ndigits=2, number=n) # kada su parametri imenovani, pozicija je nebitna 3.14
 ```
 
@@ -603,7 +605,7 @@ Pogledajmo primjer.
 
 ``` python
 
->>> print(’a’, ’b’, ’c’, sep=’ - ’, end=’ ...’) a - b - c ... 
+>>> print(’a’, ’b’, ’c’, sep=’ - ’, end=’ ...’) a - b - c ...
 >>> print(’a’, ’b’, ’c’, sep=’’) a b c
 ```
 

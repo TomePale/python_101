@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 # Podaci: Vrijednosti i njihove vrste
 
 Računalo može provoditi radnje samo s *podacima*. Broj 42 je podatak,
@@ -84,12 +86,12 @@ pisati.
 
 ``` python
 
->>> 12 + 8 20 
->>> 12 - 8 4 
->>> 12 * 8 96 
->>> 12 ** 8 # potenciranje, 12 na 8 429981696 
->>> 12 / 8 1.5 
->>> 12 // 8 # cjelobrojno dijeljenje 1 
+>>> 12 + 8 20
+>>> 12 - 8 4
+>>> 12 * 8 96
+>>> 12 ** 8 # potenciranje, 12 na 8 429981696
+>>> 12 / 8 1.5
+>>> 12 // 8 # cjelobrojno dijeljenje 1
 >>> 12 4
 ```
 
@@ -111,12 +113,12 @@ data-reference="moduli">[moduli]</a>:
 
 ``` python
 
->>> round(3.1416) # funkcija za zaokruživanje je ugrađena u Python 3 
->>> round(3.1416, 2) 3.14 
->>> import math # koristiti ćemo modul math pa ga moramo uključiti 
->>> math.ceil(3.1416) # zaokruži na prvi viši cijeli broj, obratno je "floor" 4 
->>> math.sqrt(625) # drugi korijen 25.0 
->>> math.sin(45) # sinus; uključene su i ostale trigonometrijske funkcije 0.8509035245341184 
+>>> round(3.1416) # funkcija za zaokruživanje je ugrađena u Python 3
+>>> round(3.1416, 2) 3.14
+>>> import math # koristiti ćemo modul math pa ga moramo uključiti
+>>> math.ceil(3.1416) # zaokruži na prvi viši cijeli broj, obratno je "floor" 4
+>>> math.sqrt(625) # drugi korijen 25.0
+>>> math.sin(45) # sinus; uključene su i ostale trigonometrijske funkcije 0.8509035245341184
 >>> math.pi 3.141592653589793 # konstanta \pi
 ```
 
@@ -152,13 +154,13 @@ prvo najčešće operatore za usporedbu brojeva:
 
 ``` python
 
->>> x = 2 # ovo je pridruživanje varijabli, a ne provjera jednakosti 
->>> y = 3 
->>> x < y # x je manje od y True 
->>> x >= y # x je veće ili jednako y False 
->>> x == y # x je jednako y False 
->>> x != y # x je različit od y True 
->>> x + y == 5 # rezultat izraza "x + y" iznosi 5 True 
+>>> x = 2 # ovo je pridruživanje varijabli, a ne provjera jednakosti
+>>> y = 3
+>>> x < y # x je manje od y True
+>>> x >= y # x je veće ili jednako y False
+>>> x == y # x je jednako y False
+>>> x != y # x je različit od y True
+>>> x + y == 5 # rezultat izraza "x + y" iznosi 5 True
 >>> x + (y == 5) # što se ovdje dogodilo ??? 2
 ```
 
@@ -180,7 +182,7 @@ U Pythonu:
 
 ``` python
 
->>> x = 1 # pridruživanje: "neka x bude 1", ovo nije izraz pa nema rezultata 
+>>> x = 1 # pridruživanje: "neka x bude 1", ovo nije izraz pa nema rezultata
 >>> x + 1 == 2 # provjera jednakosti: "da li se izraz "x + 1" evaluira u 2" True
 ```
 
@@ -205,13 +207,13 @@ data-reference="listing:bool_je_broj">[listing:bool_je_broj]</a>.
 
 ``` python
 
->>> n = 42 
->>> n + True # True je jednak 1 43 
->>> n - True 41 
->>> n + False # False je jednak 0 42 
->>> n * False 0 
->>> True == 1 True 
->>> True is 1 # ali True je u memoriji različita vrijednost od 1 False 
+>>> n = 42
+>>> n + True # True je jednak 1 43
+>>> n - True 41
+>>> n + False # False je jednak 0 42
+>>> n * False 0
+>>> True == 1 True
+>>> True is 1 # ali True je u memoriji različita vrijednost od 1 False
 >>> True is not 1 True
 ```
 
@@ -225,17 +227,17 @@ njih:
 
 ``` python
 
->>> a = ’nešto’ 
->>> b = ’nešto drugo’ 
->>> a == b # većina osnovnih vrsti podataka dopušta provjeru jednakosti False 
->>> ’d’ in a # da li se znak ’d’ nalazi u tekstu a False 
->>> ’dr’ in b # da li se znakovi ’drugo’ nalaze u tekstu b True 
->>> b.startswith(a) # posebne provjere se često provode posebnim metodama za vrste vrijednosti True 
->>> s = ’122’ 
->>> s.isdigit() # da li se tekst sastoji samo od brojeva? True 
->>> s = ’abc’ # da li se tekst sastoji samo od slova? 
->>> s.isalpha() True 
->>> s = ’abc4’ 
+>>> a = ’nešto’
+>>> b = ’nešto drugo’
+>>> a == b # većina osnovnih vrsti podataka dopušta provjeru jednakosti False
+>>> ’d’ in a # da li se znak ’d’ nalazi u tekstu a False
+>>> ’dr’ in b # da li se znakovi ’drugo’ nalaze u tekstu b True
+>>> b.startswith(a) # posebne provjere se često provode posebnim metodama za vrste vrijednosti True
+>>> s = ’122’
+>>> s.isdigit() # da li se tekst sastoji samo od brojeva? True
+>>> s = ’abc’ # da li se tekst sastoji samo od slova?
+>>> s.isalpha() True
+>>> s = ’abc4’
 >>> s.isalpha() False
 ```
 
@@ -256,11 +258,11 @@ strukture podataka nezaobilazna tema za programiranje.
 
 ``` python
 
->>> bool(42) True 
->>> bool(0) False 
->>> bool(None) # vrijednost None je opisana u nastavku ovog poglavlja False 
->>> bool(’neki tekst’) # tekst koji sadrži barem jedan znak True 
->>> bool(”) # prazan tekstovni niz, tekst od nula znakova False 
+>>> bool(42) True
+>>> bool(0) False
+>>> bool(None) # vrijednost None je opisana u nastavku ovog poglavlja False
+>>> bool(’neki tekst’) # tekst koji sadrži barem jedan znak True
+>>> bool(”) # prazan tekstovni niz, tekst od nula znakova False
 >>> bool([]) # prazan popis, više o popisima kasnije False # ali zapamtimo da se prazne zbirke procjenjuju kao False
 ```
 
@@ -273,21 +275,21 @@ odnosno vrijednosti. Na primjer:
 
 ``` python
 
->>> True and False False 
->>> True or False True 
->>> not False True 
->>> True and not False True# shodno gore navedenom: 
->>> x = 1 
->>> y = 2 
->>> x + y == 3 and x == 1 True 
->>> x + y == 1000 and x == 1 False 
->>> x + y == 1000 or y == 2 True 
+>>> True and False False
+>>> True or False True
+>>> not False True
+>>> True and not False True# shodno gore navedenom:
+>>> x = 1
+>>> y = 2
+>>> x + y == 3 and x == 1 True
+>>> x + y == 1000 and x == 1 False
+>>> x + y == 1000 or y == 2 True
 >>> not x == 1 False
->>> a = ’nešto’ 
->>> b = ’nešto drugo’ 
->>> a.startswith(’n’) and b.startswith(’n’) True 
->>> a.startswith(’n’) and b.startswith(’x’) False 
->>> a.startswith(’n’) or b.startswith(’x’) True 
+>>> a = ’nešto’
+>>> b = ’nešto drugo’
+>>> a.startswith(’n’) and b.startswith(’n’) True
+>>> a.startswith(’n’) and b.startswith(’x’) False
+>>> a.startswith(’n’) or b.startswith(’x’) True
 >>> a.startswith(’n’) and not b.startswith(’x’) True
 ```
 

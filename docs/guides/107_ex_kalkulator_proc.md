@@ -1,3 +1,5 @@
+[← Back to README](../../README.md)
+
 ## Kalkulator
 
 Probajmo iskoristiti koncepte i mehanizme koje smo do sada upoznali kako

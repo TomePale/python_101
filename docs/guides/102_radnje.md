@@ -1,4 +1,6 @@
-# Radnje: Izjave, izrazi, operatori, funkcije i metode 
+[← Back to README](../../README.md)
+
+# Radnje: Izjave, izrazi, operatori, funkcije i metode
 
 Osnovna namjena programiranje je reći računalu što da *radi*. Ono što
 nam je posebno zanimljivo u definiciji sastavnih dijelova programskog
@@ -50,13 +52,13 @@ se u načelu sastoje od operatora i operanada, ali sadrže i druge
 koncepte kao sastavne dijelove što je to funkcija. Pogledajmo primjere:
 
 ``` python
-Izjave i izrazilisting:statements_expression 
->>> 17 + 25 42 
->>> n = 17 + 25 
->>> if n print('broj je paran') 
+Izjave i izrazilisting:statements_expression
+>>> 17 + 25 42
+>>> n = 17 + 25
+>>> if n print('broj je paran')
 else: print('broj jeneparan')
 
-broj je paran 
+broj je paran
 >>> x = round(3.14)
 ```
 
@@ -180,22 +182,22 @@ slučaj kada korisnika zatražimo unos funkcijom `input`{.python}.
 ``` python
 Pridruživanje vrijednosti varijablilisting:pridruzivanje_vrijednosti
 
->>> x = 16 \# pridruži vrijednost 16 novoj varijabli x 
+>>> x = 16 \# pridruži vrijednost 16 novoj varijabli x
 >>> y = 26
-\# pridruži vrijednost 26 novoj varijabli y 
->>> x + y \# rezultat ovog izračuna nismo pridružili niti jednoj varijabli 42 
+\# pridruži vrijednost 26 novoj varijabli y
+>>> x + y \# rezultat ovog izračuna nismo pridružili niti jednoj varijabli 42
 >>> z = x + y
 \# definiraj novu varijablu z kako bi se kasnije mogao pozvati na
-rezultat 
+rezultat
 >>> print(z) \# pozovi se na vrijednost varijable z 42
 
->>> z = y - x \# pridruži novu vrijednost varijabli z 
+>>> z = y - x \# pridruži novu vrijednost varijabli z
 >>> print(z)
 \# pozovi se na vrijednost varijable z 10
 
 
 >>> text = input(\"Upiši neki tekst: \") \# pridruži korisnički unos
-varijabli \"text\" Upiši neki tekst: neću 
+varijabli \"text\" Upiši neki tekst: neću
 >>> print(text) \#varijabla text se sada referira na što god da je korisnik upisao 'neću'
 ```
 
@@ -238,20 +240,20 @@ reference="listing:dodjeljivanje_aritmetika"}.
 
 ``` python
 Skraćeno izvršavanje aritmetičkih operacija i pridruživanja
-varijablilisting:dodjeljivanje_aritmetika 
->>> x = 1 
+varijablilisting:dodjeljivanje_aritmetika
+>>> x = 1
 >>> x = x + 2
-\# zbroji x i 2 pa pridruži novu vrijednost varijabli x 
+\# zbroji x i 2 pa pridruži novu vrijednost varijabli x
 >>> print(x)
-\# x sada ima novu vrijednost, nije više 1 3 
+\# x sada ima novu vrijednost, nije više 1 3
 >>> x += 2 \# isto što i
-x = x + 2 samo kraće za pisati 
->>> print(x) 5 
+x = x + 2 samo kraće za pisati
+>>> print(x) 5
 >>> x \*= 2 \# isto
-što i x = x \* 2 samo kraće za pisati 
->>> print(x) 10 
+što i x = x \* 2 samo kraće za pisati
+>>> print(x) 10
 >>> x /= 2
-\# isto što i x = x / 2 
+\# isto što i x = x / 2
 >>> print(x) 5.0
 ```
 
@@ -336,9 +338,9 @@ Ovo će početi imati više smisla kada dođemo do objektnog programiranja,
 ali za sada možemo upotrebu prikazati sljedećim primjerom:
 
 ``` python
-Provjera jednakosti i operator islisting:operator_is 
+Provjera jednakosti i operator islisting:operator_is
 >>> True == 1 \#
-True se može smatrati jednakom vrijednosti 1 True 
+True se može smatrati jednakom vrijednosti 1 True
 >>> True is 1 \#
 True nije posve ista vrijednost u memoriji kao i 1 False
 ```
@@ -352,8 +354,8 @@ izračunali taj izraz potreban nam je koncept prioriteta operatora.
 Pogledajmo primjer.
 
 ``` python
-Provjera jednakosti i operator islisting:operator_precedence 
->>> 2 + 2 \* 3 \# prvo se množi a onda zbraja 8 
+Provjera jednakosti i operator islisting:operator_precedence
+>>> 2 + 2 \* 3 \# prvo se množi a onda zbraja 8
 >>> (2 + 2) \* 3 \# prvo se
 evaluira operacija u zagradama, a tek onda množi 12
 ```
@@ -500,11 +502,11 @@ pozicijski pristup i slali samo jedan parametar. Pogledajmo funkciju
 decimala kao primjer funkcije s dva parametra.
 
 ``` python
-Obvezni i opcionalni parametrilisting:parametri_obveznost 
+Obvezni i opcionalni parametrilisting:parametri_obveznost
 >>> pi =
-3.1416 
+3.1416
 >>> round(pi) \# obavezan parametar, što se zaokružuje, bez
-toga radnja nema smisla 3 
+toga radnja nema smisla 3
 >>> round(pi, 2) \# drugi parametar je
 opcionalan, na koliko decimala 3.14
 ```
@@ -525,7 +527,7 @@ Ukoliko u Pythonu potražimo pomoć za funkciju `round`{.python} dobit
 ćemo sljedeći ispis:
 
 ``` python
-Pomoć za funkciju roundlisting:help_round 
+Pomoć za funkciju roundlisting:help_round
 >>> help(round) \"\"\" Help
 on built-in function round in module builtins:
 
@@ -561,13 +563,13 @@ ne pozicije. Pogledajmo primjer:
 
 ``` python
 Pozicijski i imenovani
-parametrilisting:pozicijski_i\_imenovani_parametri 
+parametrilisting:pozicijski_i\_imenovani_parametri
 >>> n = 3.142
 
 >>> round(number=n) \# bilo koji parametar možemo i imenovati 3
 
 >>> round(number=n, ndigits=2) \# sintaksa je ista pridruživanju
-vrijednosti varijabli 3.14 
+vrijednosti varijabli 3.14
 >>> round(ndigits=2, number=n) \# kada su
 parametri imenovani, pozicija je nebitna 3.14
 ```
@@ -583,7 +585,7 @@ kompleksniji primjer možemo prikazati naredbu `print`{.python} koju smo
 do sada koristili samo u najosnovnijem obliku.
 
 ``` python
-Pomoć za funkciju printlisting:help_print 
+Pomoć za funkciju printlisting:help_print
 >>> help(print) Help on
 built-in function print in module builtins:
 
@@ -605,7 +607,7 @@ ispisati na ekran razdvojene razmakom, osim ako nismo naredili
 drugačije. Pogledajmo primjer:
 
 ``` python
-Funkcija print s više parametaralisting:print_vise_parametara 
+Funkcija print s više parametaralisting:print_vise_parametara
 >>>
 print('a', 'b', 'c') a b c
 ```
@@ -623,9 +625,9 @@ imenima. Pogledajmo primjer.
 
 ``` python
 Funkcija print s više parametara i definiranim sep i
-endlisting:print_sep_end 
+endlisting:print_sep_end
 >>> print('a', 'b', 'c', sep=' - ', end='
-\...') a - b - c \... 
+\...') a - b - c \...
 >>> print('a', 'b', 'c', sep='') a b c
 ```
 
