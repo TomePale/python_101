@@ -1,4 +1,4 @@
- # Python 101
+# Python 101
 
 ![Python logo](./docs/images/python-logo-notext.svg)
 
