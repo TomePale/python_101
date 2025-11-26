@@ -1,4 +1,6 @@
-# python_101
+ # Python 101
+
+![Python logo](./docs/images/python-logo-notext.svg)
 
 ## Guides
 - [101 Uvod](docs/guides/101_uvod.md)
